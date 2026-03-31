@@ -1,0 +1,46 @@
+name: 🐞 Bug report
+description: Report a defect or unexpected behaviour
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for raising a bug. Please complete all sections.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short, clear description of the issue
+      placeholder: "Login fails when token expires"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What steps cause the problem?
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true

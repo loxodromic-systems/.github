@@ -1,0 +1,28 @@
+name: ✨ Feature / Task
+description: New feature or backlog task
+title: "[Feature]: "
+labels: ["enhancement"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Full description of the feature and the problem that needs to be solved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Given...
+        - [ ] When...
+        - [ ] Then...
+  
+  - type: textarea
+    id: infosec
+    attributes:
+      label: InfoSec Considerations
+      placeholder: Describe any information security considerations that should be taken in to account.
